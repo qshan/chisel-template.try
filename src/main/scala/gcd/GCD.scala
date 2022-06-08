@@ -32,3 +32,8 @@ class GCD extends Module {
   io.outputGCD := x
   io.outputValid := y === 0.U
 }
+
+object GCDMain extends App {
+  println("Generating the GCD hardware")
+  emitVerilog(new GCD(), Array("--target-dir", "generated"))
+}

@@ -1,5 +1,5 @@
 # Generate Verilog code
-doit:
+run:
 	sbt run
 
 # Compile the test
